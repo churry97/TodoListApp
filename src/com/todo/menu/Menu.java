@@ -4,14 +4,17 @@ public class Menu {
     public static void displaymenu()
     {
         System.out.println();
-        System.out.println("1. Add a new item ( add )");
-        System.out.println("2. Delete an existing item ( del )");
-        System.out.println("3. Update an item  ( edit )");
-        System.out.println("4. List all items ( ls )");
-        System.out.println("5. sort the list by name ( ls_name_asc )");
-        System.out.println("6. sort the list by name ( ls_name_desc )");
-        System.out.println("7. sort the list by date ( ls_date )");
-        System.out.println("8. exit (Or press escape key to exit)");
-        System.out.println("Enter your choice >");
+        System.out.println("<TodoList Command List>");
+        System.out.println("add - add item");
+        System.out.println("del - delete item");
+        System.out.println("edit - edit item ");
+        System.out.println("ls - list all items");
+        System.out.println("ls_name_asc - list name by ascending order");
+        System.out.println("ls_name_desc - list name by decending order");
+        System.out.println("ls_date - list by date order");
+        System.out.println("exit - exit program");
+    }
+    public static void prompt() {
+    	System.out.print("\nCommand > ");
     }
 }

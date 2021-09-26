@@ -28,6 +28,7 @@ public class TodoMain {
 			
 			case "del":
 				TodoUtil.deleteItem(l);
+				TodoUtil.saveList(l, "todolist.txt");
 				break;
 				
 			case "edit":
@@ -59,6 +60,27 @@ public class TodoMain {
 				
 			case "help":
 				Menu.displaymenu();
+				break;
+				
+			case "find":
+				String input = sc.next();
+				TodoUtil.findList(l, input);
+				break;
+				
+			case "ls_date_desc":
+				l.sortByDate();
+				l.reverseList();
+				System.out.println("Reversly ordered by date.");
+				isList = true;
+				break;
+				
+			case "find_cate":
+				String cate = sc.next();
+				TodoUtil.findCategory(l, cate);
+				break;
+				
+			case "ls_cate":
+				TodoUtil.listCategory(l);
 				break;
 
 			case "exit":

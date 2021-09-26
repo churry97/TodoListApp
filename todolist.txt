@@ -1,9 +1,9 @@
-homework##algorithm, computer vision##2021-09-19 23:39:04
-hi##gunny##2021-09-19 23:39:04
-eat##breakfast with gunny##2021-09-19 23:39:04
-work##work on project##2021-09-19 23:39:22
-play##game with younghoney##2021-09-19 23:39:56
-focus##on team project##2021-09-19 23:40:17
-rest##for 5 minutes##2021-09-19 23:40:28
-hangout##with saenaegi##2021-09-19 23:40:43
-sleep##for 7 hours##2021-09-19 23:40:57
+sports##soccer##play soccer with friends##2021/09/29##2021/09/26 17:05:01
+homework##algorithmHW##do algorithm HW3##2021/10/03##2021/09/26 17:06:07
+homework##cvHW##work on CV HW##4##2021/10/01
+eat##breakfast##eat breakfast at 7 o'clock##2021/12/31##2021/09/26 17:07:48
+eat##babgo##have babgo with saenaegi##2021/12/18##2021/09/26 17:08:23
+hobby##hangout##with gunny and dogang##2021/10/04##2021/09/26 17:09:13
+sport##walk##walk about 30 minutes##2022/01/21##2021/09/26 17:10:13
+study##algorithm##study for upcoming algorithm exam##2021/11/04##2021/09/26 17:11:01
+sport##basketball##play basketball##2021/11/03##2021/09/26 17:20:13

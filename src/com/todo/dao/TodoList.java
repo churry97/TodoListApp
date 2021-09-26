@@ -7,7 +7,7 @@ import com.todo.service.TodoSortByName;
 
 public class TodoList {
 	private List<TodoItem> list;
-
+	
 	public TodoList() {
 		this.list = new ArrayList<TodoItem>();
 	}
@@ -24,6 +24,7 @@ public class TodoList {
 		int index = list.indexOf(t);
 		list.remove(index);
 		list.add(updated);
+		//리스트 갯수 알아내
 	}
 
 	public ArrayList<TodoItem> getList() {
@@ -52,4 +53,17 @@ public class TodoList {
 		}
 		return false;
 	}
+	
+	public Boolean isDuplicateNum(int number) {
+		for (TodoItem item : list) {
+			if (number == (indexOf(item)+1)) return true;
+		}
+		return false;
+	}
+
+	public int size() {
+		int size = list.size();
+		return size;
+	}
+
 }

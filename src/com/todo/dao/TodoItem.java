@@ -7,18 +7,38 @@ public class TodoItem {
     private String title;
     private String desc;
     private String current_date;
+    private String category;
+    private String due_date;
+    private int number;
 
 
-    public TodoItem(String title, String desc){
+	public TodoItem(String title, String desc, String category, String due_date){
         this.title=title;
         this.desc=desc;
-        Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String str = format.format(date);
-        this.current_date = str;
+        this.category=category;
+        this.due_date=due_date;
+        SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+        this.current_date = f.format(new Date());
     }
     
-    public String getTitle() {
+    public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	
+	
+    public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getTitle() {
         return title;
     }
 
@@ -42,14 +62,24 @@ public class TodoItem {
         this.current_date = current_date;
     }
     
-    public String toSaveString() {
-    	return title + "##" + desc + "##" + current_date + "\n";
+    public String getDue_date() {
+		return due_date;
+	}
+
+	public void setDue_date(String due_date) {
+		this.due_date = due_date;
+	}
+
+	public String toSaveString() {
+    	return category + "##" + title + "##" + desc + "##" + due_date + "##" + current_date + "\n";
     }
     
     @Override
     public String toString() {
-    	return "[" + title + "]" + " " + desc + " - " + current_date;
+    	return "[" + category + "]" + " " + title + " - " + desc + " - " + due_date + " - " + current_date;
     }
     
-    
+    public String findString() {
+    	return category + title + desc + due_date + current_date;
+    }
 }
